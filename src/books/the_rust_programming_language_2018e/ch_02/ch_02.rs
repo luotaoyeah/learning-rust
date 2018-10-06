@@ -11,8 +11,6 @@ use std::io;
 pub fn fn_02() {
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
-    println!("ANSWER: {}", secret_number);
-
     loop {
         println!("PLEASE INPUT YOUR GUESS:");
 
@@ -42,7 +40,10 @@ pub fn fn_02() {
            声明同名变量时，之前声明的变量会被隐藏（shadow）；
            在变量名后面通过冒号（:）声明变量的类型；
          */
-        let guess: u32 = guess.trim().parse().expect("PLEASE INPUT A NUMBER.");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         /*
            println! 的第一个参数中可以使用 {} 作为占位符；
@@ -65,6 +66,7 @@ pub fn fn_02() {
         /*
            match 语句，类似其他语言的 switch 语句，
            后面的每一个分支称之为一个 arm，match 表达式的值会依次跟每一个 arm 进行比较，
+           每一个 arm 中，=> 前面的部分称之为模式（pattern），
            当找到匹配值时，执行对应的代码；
 
            rust 是一种静态强类型语言，同时拥有类型推断；
