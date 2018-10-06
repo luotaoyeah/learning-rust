@@ -2,9 +2,16 @@
    Programming a Guessing Game
  */
 
+extern crate rand;
+
+use self::rand::Rng;
 use std::io;
 
 pub fn fn_02() {
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+
+    println!("ANSWER: {}", secret_number);
+
     println!("PLEASE INPUT YOUR GUESS:");
 
     /*
@@ -33,4 +40,15 @@ pub fn fn_02() {
        println! 的第一个参数中可以使用 {} 作为占位符；
      */
     println!("YOUR GUESS IS {}", guess);
+
+    /*
+       Cargo.lock 文件记录了所有依赖的 crates 的确切版本，保证了每次构建都可重现；
+       除非手动更新依赖，否则所有依赖的版本都会保持不变；
+
+       cargo update 命令用于自动更新所有依赖到最新的 patch 版本（major.minor.patch），
+       并将新的版本号保存到 Cargo.lock 文件；
+
+       如果要更新 minor 或者 major 版本号，需要手动修改 Cargo.toml 中的版本号，
+       并通过 cargo build 命令更新 Cargo.lock 中对应的版本号；
+     */
 }
