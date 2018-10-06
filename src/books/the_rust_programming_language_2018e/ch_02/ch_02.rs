@@ -5,6 +5,7 @@
 extern crate rand;
 
 use self::rand::Rng;
+use std::cmp::Ordering;
 use std::io;
 
 pub fn fn_02() {
@@ -37,6 +38,12 @@ pub fn fn_02() {
         .expect("FAIL TO READ LINE");
 
     /*
+       声明同名变量时，之前声明的变量会被隐藏（shadow）；
+       在变量名后面通过冒号（:）声明变量的类型；
+     */
+    let guess: u32 = guess.trim().parse().expect("PLEASE INPUT A NUMBER.");
+
+    /*
        println! 的第一个参数中可以使用 {} 作为占位符；
      */
     println!("YOUR GUESS IS {}", guess);
@@ -51,4 +58,18 @@ pub fn fn_02() {
        如果要更新 minor 或者 major 版本号，需要手动修改 Cargo.toml 中的版本号，
        并通过 cargo build 命令更新 Cargo.lock 中对应的版本号；
      */
+
+    /*
+       match 语句，类似其他语言的 switch 语句，
+       后面的每一个分支称之为一个 arm，match 表达式的值会依次跟每一个 arm 进行比较，
+       当找到匹配值时，执行对应的代码；
+
+       rust 是一种静态强类型语言，同时拥有类型推断；
+       rust 中数字类型默认是 i32；
+     */
+    match guess.cmp(&secret_number) {
+        Ordering::Less => println!("TOO SMALL"),
+        Ordering::Greater => println!("TOO BIG"),
+        Ordering::Equal => println!("BINGO"),
+    }
 }
