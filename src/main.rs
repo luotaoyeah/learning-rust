@@ -1,8 +1,8 @@
-use self::books::the_rust_programming_language_2018e::ch_02::ch_02;
+use self::books::the_rust_programming_language_2018e::ch_03::ch_03_01::ch_03_01_01;
 mod books;
 
 fn main() {
     println!("--------------------------------------------------");
 
-    ch_02::fn_02();
+    ch_03_01_01::fn_03_01_01();
 }

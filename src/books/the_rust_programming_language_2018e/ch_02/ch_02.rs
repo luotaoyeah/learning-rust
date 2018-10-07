@@ -11,6 +11,9 @@ use std::io;
 pub fn fn_02() {
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
+    /*
+       loop 用来声明一个循环；
+     */
     loop {
         println!("PLEASE INPUT YOUR GUESS:");
 
@@ -57,19 +60,19 @@ pub fn fn_02() {
            除非手动更新依赖，否则所有依赖的版本都会保持不变；
 
            cargo update 命令用于自动更新所有依赖到最新的 patch 版本（major.minor.patch），
-           并将新的版本号保存到 Cargo.lock 文件；
+           并将新的版本号保存到 Cargo.lock 文件，但是不会修改 Cargo.toml 中的版本号；
 
            如果要更新 minor 或者 major 版本号，需要手动修改 Cargo.toml 中的版本号，
            并通过 cargo build 命令更新 Cargo.lock 中对应的版本号；
          */
 
         /*
-           match 语句，类似其他语言的 switch 语句，
+           match 表达式，类似其他语言的 switch 语句，
            后面的每一个分支称之为一个 arm，match 表达式的值会依次跟每一个 arm 进行比较，
            每一个 arm 中，=> 前面的部分称之为模式（pattern），
-           当找到匹配值时，执行对应的代码；
+           当模式匹配时，执行对应的代码；
 
-           rust 是一种静态强类型语言，同时拥有类型推断；
+           rust 是一种静态强类型语言，并且拥有类型推断；
            rust 中数字类型默认是 i32；
          */
         match guess.cmp(&secret_number) {
