@@ -5,7 +5,7 @@
 
 /*
    变量（variable）和常量（constant）的区别：
-       1. 变量默认是 immutable 的，但是可以通过 mut 声明为 immutable 的，
+       1. 变量默认是 immutable 的，但是可以通过 mut 声明为 mutable 的，
           常量始终是 immutable 的；
        2. 变量使用 let 关键字声明，
           常量使用 const 关键字声明；
