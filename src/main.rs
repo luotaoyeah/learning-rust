@@ -3,5 +3,5 @@ mod books;
 fn main() {
     println!("--------------------------------------------------");
 
-    books::the_rust_programming_language_2018e::ch_03::ch_03_02::ch_03_02_01::fn_03_02_01();
+    books::the_rust_programming_language_2018e::ch_03::ch_03_02::ch_03_02_02::fn_03_02_02();
 }
