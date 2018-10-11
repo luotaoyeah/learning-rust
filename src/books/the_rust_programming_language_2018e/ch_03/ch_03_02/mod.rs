@@ -1,1 +1,1 @@
-pub mod ch_03_02_05;
+pub mod ch_03_02_06;

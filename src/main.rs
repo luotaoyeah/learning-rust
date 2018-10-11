@@ -1,7 +1,5 @@
 mod books;
 
 fn main() {
-    println!("--------------------------------------------------");
-
-    books::the_rust_programming_language_2018e::ch_03::ch_03_02::ch_03_02_05::fn_03_02_05();
+    books::the_rust_programming_language_2018e::ch_03::ch_03_02::ch_03_02_06::fn_03_02_06();
 }
