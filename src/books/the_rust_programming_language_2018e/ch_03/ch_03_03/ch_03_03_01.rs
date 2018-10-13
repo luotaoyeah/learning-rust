@@ -10,10 +10,10 @@ pub fn fn_03_03_01() {
            函数和变量使用 snake_case 的命名方式（所有字母小写，多个单词之间使用下划线（_）分隔）
          */
 
-        fn_02();
+        another_function();
     }
 }
 
-fn fn_02() {
-    println!("fn_02()");
+fn another_function() {
+    println!("another_function()");
 }
