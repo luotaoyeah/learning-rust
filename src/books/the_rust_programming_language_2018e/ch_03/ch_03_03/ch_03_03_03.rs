@@ -17,12 +17,12 @@ pub fn fn_03_03_03() {
          */
 
         /*
-           赋值语句是一种简单的 statement；
+           赋值语句是一个 statement；
          */
         let y: i32 = 6;
 
         /*
-           函数定义也是一种 statement；
+           函数定义是一个 statement；
          */
         fn fn_01() {}
     }
@@ -69,7 +69,7 @@ pub fn fn_03_03_03() {
         let y_01 = {
             let x = 3;
             /*
-               此处 x + 1 是一个 expression，后面没有加分号，它的值会返回作为整个 block 的值；
+               此处 x + 1 是一个 expression，后面没有加分号，它的值会被返回作为整个 block 的值；
              */
             x + 1
         };
