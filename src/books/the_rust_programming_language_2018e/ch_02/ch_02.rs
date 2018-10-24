@@ -20,7 +20,7 @@ pub fn fn_02() {
         /*
            let 关键字用来声明一个变量；
            rust 中的变量默认是 immutable 的，需要使用 mut 关键字将变量声明为 mutable 的；
-           String::new() 中的::表示 new() 方法是 String 类型上的一个 associated function（俗称：静态方法）；
+           String::new() 中的::表示 new() 方法是 String 类型上的一个关联方法（associated function）（俗称：静态方法）；
          */
         let mut guess = String::new();
 
