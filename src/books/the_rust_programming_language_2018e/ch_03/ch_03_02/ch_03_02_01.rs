@@ -15,5 +15,5 @@ pub fn fn_03_02_01() {
             此时必须显式声明变量的类型，否则会报编译错误；
      */
     let guess: u32 = "42".parse().expect("FAIL TO PARSE");
-    println!("{}", guess)
+    println!("{}", guess);
 }

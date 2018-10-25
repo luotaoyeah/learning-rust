@@ -1,5 +1,5 @@
 mod books;
 
 fn main() {
-    books::the_rust_programming_language_2018e::ch_03::ch_03_05::ch_03_05_04::ch_03_05_04_06::fn_03_05_04_06();
+    books::the_rust_programming_language_2018e::ch_04::ch_04_01::ch_04_01_01::fn_04_01_01();
 }

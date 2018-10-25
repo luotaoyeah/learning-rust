@@ -26,7 +26,7 @@ pub fn fn_03_02_06() {
         if gt {
             println!(">");
         } else {
-            println!("<")
+            println!("<");
         }
     }
 }
