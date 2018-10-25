@@ -2,7 +2,6 @@
    Understanding Ownership
        What is ownership ?
        Ownership Rules
-       Variable Scope
  */
 
 /*
