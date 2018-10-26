@@ -7,7 +7,7 @@ pub fn fn_04_02_01_02() {
     println!("-------------------------------------------------- 01");
     {
         /*
-           使用 reference 作为函数参数，称之为 borrowing；
+           使用 reference 而不是直接使用 variable，称之为 borrowing；
            跟 variable 一样，reference 默认也是 immutable 的；
          */
 
