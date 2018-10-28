@@ -1,7 +1,7 @@
 /*
    Struct
        An Example Program Using Struct
-           Refactoring with Tuples
+           Refactoring with Tuple
 */
 
 /*
