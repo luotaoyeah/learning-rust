@@ -13,7 +13,7 @@ pub fn fn_06_01_03_01() {
 
         let i = Some(5);
         let s = Some("hello");
-        // 当使用 None 时，必须显示标注类型
+        // 当使用 None 时，必须显式标注类型
         let n: Option<i32> = None;
     }
 
