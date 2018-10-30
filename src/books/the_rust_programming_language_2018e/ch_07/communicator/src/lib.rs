@@ -11,7 +11,7 @@
        2. 当前目录下有一个 foo 目录，下面有一个 mod.rs 文件；
  */
 pub mod client;
-mod network;
+pub mod network;
 
 #[cfg(test)]
 mod tests {
