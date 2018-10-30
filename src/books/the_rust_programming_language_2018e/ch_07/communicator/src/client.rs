@@ -1,1 +1,4 @@
-fn connect() {}
+///
+pub fn connect() {
+    println!("client::connect()");
+}

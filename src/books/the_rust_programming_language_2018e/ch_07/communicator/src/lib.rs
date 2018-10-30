@@ -10,7 +10,7 @@
        1. 当前目录下有一个 foo.rs 文件；
        2. 当前目录下有一个 foo 目录，下面有一个 mod.rs 文件；
  */
-mod client;
+pub mod client;
 mod network;
 
 #[cfg(test)]
