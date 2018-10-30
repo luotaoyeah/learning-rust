@@ -3,4 +3,5 @@
 *.iml
 
 /target
+/src/books/the_rust_programming_language_2018e/ch_07/communicator/target
 **/*.rs.bk
