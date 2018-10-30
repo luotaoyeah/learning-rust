@@ -1,7 +1,7 @@
 /*
    Enums and Pattern Matching
        match
-           the _ placeholder
+           the `_` placeholder
  */
 
 pub fn fn_06_02_05_01() {
