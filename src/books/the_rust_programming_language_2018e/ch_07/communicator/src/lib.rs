@@ -15,8 +15,23 @@ pub mod network;
 
 #[cfg(test)]
 mod tests {
+    /*
+       在 use 语句中，可以使用 super 访问上级 module；
+     */
+    use super::client;
+
     #[test]
     fn it_works() {
         assert_eq!(2 + 2, 4);
+        client::connect();
+        /*
+           :: 开头表示从 root module 开始；
+         */
+        ::client::connect();
+
+        /*
+           通过 super 访问上级 module；
+         */
+        super::client::connect();
     }
 }

@@ -18,7 +18,7 @@ enum TrafficLignt {
     Green,
 }
 
-pub fn fn_07_03_01_01() {
+pub fn fn_07_03_03_01() {
     println!("-------------------------------------------------- 01");
     {
         println!("{:?}", Yellow);
