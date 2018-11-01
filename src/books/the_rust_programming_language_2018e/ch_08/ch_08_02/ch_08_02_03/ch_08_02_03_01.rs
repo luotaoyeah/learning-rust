@@ -2,6 +2,7 @@
    Common Collections
        Strings
            Upate a String
+               push_str()
 
  */
 
