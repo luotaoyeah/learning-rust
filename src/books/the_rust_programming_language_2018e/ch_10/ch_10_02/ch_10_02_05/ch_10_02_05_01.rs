@@ -10,7 +10,7 @@ pub fn fn_10_02_05_01() {
     println!("-------------------------------------------------- 01");
     {
         /*
-
+           当泛型参数满足某个条件时，才实现某个方法；
          */
 
         struct Pair<T> {
@@ -24,6 +24,9 @@ pub fn fn_10_02_05_01() {
             }
         }
 
+        /*
+           当泛型参数 T 满足条件：T:PartialOrd 时，才实现方法 cmp_display()；
+         */
         impl<T: PartialOrd> Pair<T> {
             fn cmp_display(&self) {
                 if self.x > self.y {
