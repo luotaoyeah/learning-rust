@@ -17,21 +17,12 @@ pub fn fn_10_02_05_01() {
             fn fn_01();
         }
 
-        struct Pair<T> {
-            x: T,
-            y: T,
-        }
-
-        impl<T> Pair<T> {
-            fn new(x: T, y: T) -> Pair<T> {
-                Pair { x, y }
-            }
-        }
-
         /*
-           当泛型参数 T 满足条件：T:PartialOrd 时，才实现 trait；
+           当泛型参数 T 满足条件：T:PartialOrd 时，才实现 trait，
+           即：当泛型参数 T 已经实现了某个 trait（PartialOrd）时，才为它实现新的 trait（MyTrait）；
+           这个新的实现称之为：blanket implementation；
          */
-        impl<T: PartialOrd> MyTrait for Pair<T> {
+        impl<T: PartialOrd> MyTrait for T {
             fn fn_01() {
                 println!("fn_01()");
             }
