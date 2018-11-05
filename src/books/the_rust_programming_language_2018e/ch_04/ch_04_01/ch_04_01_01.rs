@@ -1,6 +1,6 @@
 /*
    Understanding Ownership
-       What is ownership ?
+       What Is Ownership?
        Ownership Rules
  */
 
@@ -16,7 +16,7 @@
    ownership 定义的三个规则：
        1. 每一个数据（value）都有一个对应的变量（variable），称之为它的 owner；
        2. 每一个数据在任何时候只能有一个 owner；
-       3. 当 owner 离开作用域时，value 会被丢弃（drop）；
+       3. 当 owner 离开 scope 时，value 会被丢弃（drop）；
  */
 pub fn fn_04_01_01() {
     println!("-------------------------------------------------- 01");

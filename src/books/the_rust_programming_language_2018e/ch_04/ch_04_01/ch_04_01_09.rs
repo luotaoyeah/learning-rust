@@ -1,13 +1,14 @@
 /*
    Understanding Ownership
        Ownership and Functions
+           Return Values and Scope
  */
 
 pub fn fn_04_01_09() {
     println!("-------------------------------------------------- 01");
     {
         /*
-           函数返回值的时候，也会发生 ownership 的转移；
+           函数返回的时候，也会发生 ownership 的转移；
          */
 
         let s01 = gives_ownership();
@@ -26,13 +27,12 @@ pub fn fn_04_01_09() {
         /// 获取长度
         fn get_length(s: String) -> (String, usize) {
             let length = s.len();
-            /*
-               通过 tuple 的方式返回多个值；
-             */
+            // 通过返回 tuple 的方式返回多个值
             (s, length)
         }
 
         let s01 = String::from("hello");
+        // 对 tuple 进行 destructure
         let (s02, len) = get_length(s01);
 
         println!("{} {}", s02, len); // hello 5
@@ -40,10 +40,10 @@ pub fn fn_04_01_09() {
 }
 
 fn gives_ownership() -> String {
-    let s: String = String::from("hello");
-    s
+    let some_string: String = String::from("hello");
+    some_string
 }
 
-fn takes_and_gives_back(s: String) -> String {
-    s
+fn takes_and_gives_back(a_string: String) -> String {
+    a_string
 }

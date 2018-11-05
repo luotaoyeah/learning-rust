@@ -12,27 +12,21 @@ pub fn fn_04_01_08() {
          */
 
         let i: i32 = 5;
-        cp(i);
-        /*
-           i32 是简单类型，传递给函数之后，依然有效，
-           发生了 copy 操作；
-         */
+        // i32 是简单类型，传递给函数之后，发生 copy 操作
+        makes_copy(i);
         println!("{}", i);
 
         let s: String = String::from("hello");
-        mv(s);
-        /*
-           String 类型的变量，传递给函数之后，不再有效，
-           发生了 move 操作；
-         */
+        // String 类型的变量，传递给函数之后，发生 move 操作
+        takes_ownership(s);
         println!("{}", s); // [E0382]: use of moved value: `s`
     }
 }
 
-fn mv(some_string: String) {
+fn takes_ownership(some_string: String) {
     println!("{}", some_string);
 }
 
-fn cp(some_integer: i32) {
+fn makes_copy(some_integer: i32) {
     println!("{}", some_integer);
 }

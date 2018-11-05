@@ -19,7 +19,7 @@ pub fn fn_04_01_03() {
     {
         // 使用 String::from() 方法，从一个 string literal 创建一个 String 变量
         let mut s: String = String::from("hello");
-        // 使用 push_str() 方法，往 s 中添加字符串；
+        // 使用 push_str() 方法，往 s 中添加 string slice；
         s.push_str(" world");
         println!("{}", s); // hello world
     }
