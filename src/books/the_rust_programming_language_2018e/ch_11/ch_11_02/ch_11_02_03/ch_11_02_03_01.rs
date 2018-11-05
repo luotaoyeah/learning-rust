@@ -1,7 +1,7 @@
 /*
    Writing Automated Tests
        Controlling How Tests Are Run
-           gnoring Some Tests Unless Specifically Requested
+           Ignoring Some Tests Unless Specifically Requested
  */
 
 pub fn fn_11_02_03_01() {
