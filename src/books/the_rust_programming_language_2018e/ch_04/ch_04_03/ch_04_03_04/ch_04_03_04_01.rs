@@ -26,12 +26,9 @@ pub fn fn_04_03_04_01() {
         }
 
         let s01: String = String::from("hello world");
-        println!("{}", first_word(&s01)); // hello
         println!("{}", first_word(&s01[..])); // hello
 
         let s02: &str = "hello world";
         println!("{}", first_word(s02)); // hello
-        println!("{}", first_word(&s02)); // hello
-        println!("{}", first_word(&s02[..])); // hello
     }
 }

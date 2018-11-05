@@ -15,10 +15,10 @@ pub fn fn_04_03_02_01() {
         let s01: String = String::from("hello world");
 
         /*
-           后面的 [0..5] 是一个 range，表示引用的数据范围，左闭右开；
+           后面的 [0..5] 中的 0..5 是一个 range，表示引用的数据范围，左闭右开；
          */
-        let hello_slice = &s01[0..5];
-        let world_slice = &s01[6..11];
+        let hello_slice: &str = &s01[0..5];
+        let world_slice: &str = &s01[6..11];
 
         println!("{} {}", hello_slice, world_slice); // hello world
     }
@@ -30,8 +30,8 @@ pub fn fn_04_03_02_01() {
          */
 
         let s: String = String::from("hello world");
-        let hello_slice = &s[0..=4];
-        let world_slice = &s[6..=10];
+        let hello_slice: &str = &s[0..=4];
+        let world_slice: &str = &s[6..=10];
         println!("{} {}", hello_slice, world_slice); // hello world
     }
 }

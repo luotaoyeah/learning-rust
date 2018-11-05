@@ -30,8 +30,8 @@ pub fn fn_04_03_02_03() {
 
         /*
            因为在某个 scope 中，不能同时存在 immutable reference 和 mutable reference，
-           上面调用 first_word(&s) 时，使用了 immutable reference：&s，
-           而此处使用了 mutable reference：&mut self，所以编译报错；
+           上面调用 first_word(&s) 时，使用了 immutable reference（&s），
+           而此处使用了 mutable reference（&mut self），所以编译报错；
          */
         s.clear(); // [E0502]: cannot borrow `s` as mutable because it is also borrowed as immutable
     }

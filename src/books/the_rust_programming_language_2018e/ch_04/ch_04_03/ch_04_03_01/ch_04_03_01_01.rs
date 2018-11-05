@@ -19,6 +19,7 @@ pub fn fn_04_03_01_01() {
             let bytes = s.as_bytes();
 
             for (i, &item) in bytes.iter().enumerate() {
+                // 使用了 byte literal 的语法（b' '）
                 if item == b' ' {
                     return i;
                 }
@@ -27,7 +28,7 @@ pub fn fn_04_03_01_01() {
             s.len()
         }
 
-        let s01: String = String::from("hello world");
+        let mut s01: String = String::from("hello world");
         println!("{}", first_word(&s01)); // 5
 
         let s02: String = String::from("rust");
