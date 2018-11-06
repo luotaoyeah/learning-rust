@@ -1,12 +1,17 @@
-use std::env;
 use std::error::Error;
 use std::fs;
-use std::process;
 
 /// 运行
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     // 读取文件内容
     let text = fs::read_to_string(config.filename)?;
+
+    let result = search(&config.query, &text);
+
+    for line in result {
+        println!("{}", line);
+    }
+
     Ok(())
 }
 
@@ -32,7 +37,15 @@ impl Config {
 
 /// 查找
 fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    vec![]
+    let mut result: Vec<&str> = Vec::new();
+
+    for line in contents.lines() {
+        if line.contains(query) {
+            result.push(line);
+        }
+    }
+
+    result
 }
 
 #[cfg(test)]
