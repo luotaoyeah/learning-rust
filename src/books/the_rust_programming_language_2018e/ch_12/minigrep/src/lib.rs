@@ -7,8 +7,6 @@ use std::process;
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     // 读取文件内容
     let text = fs::read_to_string(config.filename)?;
-    println!("{}", text);
-
     Ok(())
 }
 
@@ -29,5 +27,27 @@ impl Config {
         let filename: String = args[2].clone();
 
         Ok(Config { query, filename })
+    }
+}
+
+/// 查找
+fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    vec![]
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn one_result() {
+        let query = "duct";
+        let contents = "\
+Rust:
+safe, fast, productive.
+Pick three.\
+";
+
+        assert_eq!(vec!["safe, fast, productive."], search(query, contents));
     }
 }
