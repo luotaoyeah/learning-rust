@@ -1,4 +1,5 @@
 use std::env;
+use std::error::Error;
 use std::fs;
 use std::process;
 
@@ -7,13 +8,22 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     let config: Config = Config::new(&args).unwrap_or_else(|e| {
-        println!("参数解析失败：{}", e);
+        println!("[ERROR] 参数解析失败：{}", e);
         process::exit(1);
     });
 
+    if let Err(e) = run(config) {
+        println!("[ERROR] 程序运行失败：{}", e);
+        process::exit(1);
+    }
+}
+
+fn run(config: Config) -> Result<(), Box<dyn Error>> {
     // 读取文件内容
-    let text = fs::read_to_string(config.filename).expect("文件读取失败");
+    let text = fs::read_to_string(config.filename)?;
     println!("{}", text);
+
+    Ok(())
 }
 
 /// 配置
@@ -27,7 +37,7 @@ impl Config {
     /// * `args` 参数列表
     fn new(args: &[String]) -> Result<Config, &'static str> {
         if args.len() < 3 {
-            return Err("NOT ENOUGH ARGUMENTS");
+            return Err("参数不够");
         }
         let query: String = args[1].clone();
         let filename: String = args[2].clone();
