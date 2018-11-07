@@ -2,6 +2,7 @@
   Functional Language Features: Iterators and Closures
       Closures: Anonymous Functions that Can Capture Their Environment
           Creating an Abstraction of Behavior with Closures
+              Refactoring Using Functions
 */
 
 use std::thread;
@@ -15,10 +16,10 @@ use std::time::Duration;
 pub fn fn_13_01_01_01() {
     println!("-------------------------------------------------- 01");
     {
-        let itensity: u32 = 10;
-        let random_num: u32 = 7;
+        let itensity: u32 = 30;
+        let random_num: u32 = 3;
 
-        generate_workout(itensity, random_num);
+        generate_workout_02(itensity, random_num);
     }
 }
 
@@ -30,7 +31,7 @@ fn simulated_expensive_calculation(intensity: u32) -> u32 {
 }
 
 ///
-fn generate_workout(itensity: u32, random_num: u32) {
+fn generate_workout_01(itensity: u32, random_num: u32) {
     if itensity < 25 {
         println!("{} pushups", simulated_expensive_calculation(itensity));
         println!("{} situps", simulated_expensive_calculation(itensity));
@@ -42,6 +43,22 @@ fn generate_workout(itensity: u32, random_num: u32) {
                 "run for {} minutes",
                 simulated_expensive_calculation(itensity)
             );
+        }
+    }
+}
+
+/// refactoring with function
+fn generate_workout_02(itensity: u32, random_num: u32) {
+    let result = simulated_expensive_calculation(itensity);
+
+    if itensity < 25 {
+        println!("{} pushups", result);
+        println!("{} situps", result);
+    } else {
+        if random_num == 3 {
+            println!("take a break");
+        } else {
+            println!("run for {} minutes", result);
         }
     }
 }
