@@ -3,6 +3,7 @@
       Closures: Anonymous Functions that Can Capture Their Environment
           Creating an Abstraction of Behavior with Closures
               Refactoring Using Functions
+              Refactoring with Closures to Store Code
 */
 
 use std::thread;
@@ -16,10 +17,7 @@ use std::time::Duration;
 pub fn fn_13_01_01_01() {
     println!("-------------------------------------------------- 01");
     {
-        let itensity: u32 = 30;
-        let random_num: u32 = 3;
-
-        generate_workout_02(itensity, random_num);
+        generate_workout_03(30, 0);
     }
 }
 
@@ -59,6 +57,26 @@ fn generate_workout_02(itensity: u32, random_num: u32) {
             println!("take a break");
         } else {
             println!("run for {} minutes", result);
+        }
+    }
+}
+
+/// refactoring with closure
+fn generate_workout_03(itensity: u32, random_num: u32) {
+    let expensive_closure = |itensity| {
+        println!("calculating...");
+        thread::sleep(Duration::from_secs(2));
+        itensity
+    };
+
+    if itensity < 25 {
+        println!("{} pushups", expensive_closure(itensity));
+        println!("{} situps", expensive_closure(itensity));
+    } else {
+        if random_num == 3 {
+            println!("take a break");
+        } else {
+            println!("run for {} minutes", expensive_closure(itensity));
         }
     }
 }
