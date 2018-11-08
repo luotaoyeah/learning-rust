@@ -4,7 +4,7 @@
           The Iterator Trait and the next Method
 */
 
-pub fn fn_13_02_01_01() {
+pub fn fn_13_02_02_01() {
     println!("-------------------------------------------------- 01");
     {
         /*
