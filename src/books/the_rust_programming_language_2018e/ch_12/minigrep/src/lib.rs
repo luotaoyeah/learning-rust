@@ -1,8 +1,14 @@
+//!
+//! `minigrep` is a exercise crate
+//!
+
 use std::env;
 use std::error::Error;
 use std::fs;
 
 /// 运行
+/// * `config` 配置
+///
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     // 读取文件内容
     let contents = fs::read_to_string(config.filename)?;
