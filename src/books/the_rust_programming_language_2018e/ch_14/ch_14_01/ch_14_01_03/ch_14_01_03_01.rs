@@ -5,7 +5,7 @@
 */
 
 /*
-  通过 pub use 将内部的结构重新输出（export）
+  通过 pub use 将内部的结构重新输出（reexport）
 */
 pub use self::A::S;
 
