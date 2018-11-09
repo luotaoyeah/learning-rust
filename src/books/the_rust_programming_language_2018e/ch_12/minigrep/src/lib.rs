@@ -33,12 +33,19 @@ pub struct Config {
 impl Config {
     /// 解析参数
     /// * `args` 参数列表
-    pub fn new(args: &[String]) -> Result<Config, &'static str> {
-        if args.len() < 3 {
-            return Err("参数不够");
-        }
-        let query: String = args[1].clone();
-        let filename: String = args[2].clone();
+    pub fn new(mut args: std::env::Args) -> Result<Config, &'static str> {
+        args.next();
+
+        let query: String = match args.next() {
+            Some(v) => v,
+            None => return Err("查找字符为空"),
+        };
+
+        let filename: String = match args.next() {
+            Some(v) => v,
+            None => return Err("文件名称为空"),
+        };
+
         let case_sensitive = env::var("MINIGREP_CASE_INSENSITIVE").is_err();
 
         Ok(Config {
@@ -51,30 +58,17 @@ impl Config {
 
 /// 查找：区分大小写
 fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    let mut result: Vec<&str> = Vec::new();
-
-    for line in contents.lines() {
-        if line.contains(query) {
-            result.push(line);
-        }
-    }
-
-    result
+    contents.lines().filter(|i| i.contains(query)).collect()
 }
 
 /// 查找：不区分大小写
 fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    let query: String = query.to_lowercase();
+    let query = &query.to_lowercase();
 
-    let mut result: Vec<&str> = Vec::new();
-
-    for line in contents.lines() {
-        if line.to_lowercase().contains(&query) {
-            result.push(line);
-        }
-    }
-
-    result
+    contents
+        .lines()
+        .filter(|i| i.to_lowercase().contains(query))
+        .collect()
 }
 
 #[cfg(test)]

@@ -5,10 +5,8 @@ use std::env;
 use std::process;
 
 fn main() {
-    // 获取命令行参数列表
-    let args: Vec<String> = env::args().collect();
 
-    let config: Config = Config::new(&args).unwrap_or_else(|e| {
+    let config: Config = Config::new(env::args()).unwrap_or_else(|e| {
         eprintln!("[ERROR] 参数解析失败：{}", e);
         process::exit(1);
     });
