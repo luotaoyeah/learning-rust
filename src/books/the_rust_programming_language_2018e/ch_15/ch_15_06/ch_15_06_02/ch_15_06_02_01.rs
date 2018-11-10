@@ -4,6 +4,7 @@
           Preventing Reference Cycles: Turning an Rc<T> into a Weak<T>
               Creating a Tree Data Structure: a Node with Child Nodes
               Adding a Reference from a Child to Its Parent
+              Visualizing Changes to strong_count and weak_count
 
 */
 
@@ -36,15 +37,27 @@ pub fn fn_15_06_02_01() {
         });
 
         println!("{:?}", leaf.parent.borrow().upgrade());
+        println!("leaf.strong_count:{}", Rc::strong_count(&leaf));
+        println!("leaf.weak_count:{}", Rc::weak_count(&leaf));
 
-        let branch = Rc::new(Node {
-            value: 5,
-            parent: RefCell::new(Weak::new()),
-            children: RefCell::new(vec![Rc::clone(&leaf)]),
-        });
+        {
+            let branch = Rc::new(Node {
+                value: 5,
+                parent: RefCell::new(Weak::new()),
+                children: RefCell::new(vec![Rc::clone(&leaf)]),
+            });
 
-        *leaf.parent.borrow_mut() = Rc::downgrade(&branch);
+            *leaf.parent.borrow_mut() = Rc::downgrade(&branch);
+
+            println!("leaf.strong_count:{}", Rc::strong_count(&leaf));
+            println!("leaf.weak_count:{}", Rc::weak_count(&leaf));
+
+            println!("branch.strong_count:{}", Rc::strong_count(&branch));
+            println!("branch.weak_count:{}", Rc::weak_count(&branch));
+        }
 
         println!("{:#?}", leaf.parent.borrow().upgrade());
+        println!("leaf.strong_count:{}", Rc::strong_count(&leaf));
+        println!("leaf.weak_count:{}", Rc::weak_count(&leaf));
     }
 }
