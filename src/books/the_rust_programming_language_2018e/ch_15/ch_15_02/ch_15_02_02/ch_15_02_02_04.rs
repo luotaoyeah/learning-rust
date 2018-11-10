@@ -10,7 +10,7 @@ pub fn fn_15_02_02_04() {
     println!("-------------------------------------------------- 01");
     {
         /*
-            deref coersion：
+            deref coercioin：
                 如果函数或者方法的参数是一个：实现了 Deref 特性的类型的一个 reference，如：
                     &MyBox::new(String::from("rust"))
                 如果有必要（参数类型不匹配），
