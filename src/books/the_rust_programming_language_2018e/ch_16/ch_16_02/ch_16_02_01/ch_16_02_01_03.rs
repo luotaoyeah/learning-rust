@@ -28,9 +28,14 @@ pub fn fn_16_02_01_03() {
             }
         });
 
+        /*
+          主线程会一直阻塞等待，直到 channel 关闭；
+        */
         for msg in rx {
             println!("{}", msg);
         }
+
+        println!("END");
 
         handle.join().unwrap();
     }
