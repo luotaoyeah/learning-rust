@@ -4,7 +4,7 @@
           Inheritance as a Type System and as Code Sharing
 */
 
-pub fn fn_17_01_01_01() {
+pub fn fn_17_01_01_02() {
     println!("-------------------------------------------------- 01");
     {
         /*
