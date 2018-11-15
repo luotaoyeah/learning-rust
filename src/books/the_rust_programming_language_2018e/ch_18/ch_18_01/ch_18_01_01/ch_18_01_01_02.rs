@@ -31,4 +31,18 @@ pub fn fn_18_01_01_02() {
             println!("black");
         }
     }
+
+    println!("-------------------------------------------------- 02");
+    {
+        let o: Option<i32> = Some(9);
+        let i = 0;
+
+        if i > 0 {
+            println!("i > 0");
+        } else if let Some(x) = o {
+            println!("x: {}", x);
+        } else {
+            println!("no");
+        }
+    }
 }
