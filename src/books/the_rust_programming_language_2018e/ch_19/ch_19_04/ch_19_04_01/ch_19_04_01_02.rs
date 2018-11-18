@@ -4,7 +4,7 @@
           The Never Type that Never Returns
 */
 
-pub fn fn_19_04_01_01() {
+pub fn fn_19_04_01_02() {
     println!("-------------------------------------------------- 01");
     {
         /*
