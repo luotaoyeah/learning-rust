@@ -1,7 +1,7 @@
-use books::the_rust_programming_language_2018e::ch_01;
+use books::the_rust_programming_language_2018e::ch_02;
 
 mod books;
 
 fn main() {
-    ch_01::ch_01_03::ch_01_03::fn_01_03();
+    ch_02::ch_02::fn_02();
 }
