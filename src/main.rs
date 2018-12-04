@@ -1,7 +1,7 @@
-use books::the_rust_programming_language_2018e::ch_03;
+use books::the_rust_programming_language_2018e::ch_03_common_programming_concepts;
 
 mod books;
 
 fn main() {
-    ch_03::ch_03_01::ch_03_01_03::fn_03_01_03();
+    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_01::fn_03_02_01();
 }
