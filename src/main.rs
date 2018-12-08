@@ -1,4 +1,4 @@
-use books::the_rust_programming_language_2018e::ch_03_common_programming_concepts;
+use crate::books::the_rust_programming_language_2018e::ch_03_common_programming_concepts;
 
 mod books;
 
