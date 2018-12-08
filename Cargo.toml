@@ -2,9 +2,10 @@
 name = "learning-rust"
 version = "0.1.0"
 authors = ["luotao <luotaoyeah@gmail.com>"]
+edition = "2018"
 
 [dependencies]
-rand = "0.5.5"
+rand = "0.6.1"
 
 [profile.dev]
 opt-level = 1
