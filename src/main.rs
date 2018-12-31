@@ -3,5 +3,5 @@ use crate::books::the_rust_programming_language_2018e::ch_03_common_programming_
 mod books;
 
 fn main() {
-    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_01_scalar_types::ch_03_02_01_01_integer_types::ch_03_02_01_01_03::fn_03_02_01_01_03();
+    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_01_scalar_types::ch_03_02_01_02_integer_overflow::ch_03_02_01_02_01::fn_03_02_01_02_01();
 }
