@@ -19,6 +19,7 @@
 
 #![allow(overflowing_literals)]
 pub fn fn_03_02_01_02_01() {
+    println!("-------------------------------------------------- 01");
     let x: u8 = 257; // error: literal out of range for u8
     println!("{}", x); // 1
 }
