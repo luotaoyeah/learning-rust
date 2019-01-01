@@ -1,1 +1,1 @@
-pub mod ch_03_02_01_scalar_types;
+pub mod ch_03_02_02_compound_types;
