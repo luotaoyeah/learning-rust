@@ -9,5 +9,5 @@ fn type_of<T>(_: &T) {
 }
 
 fn main() {
-    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_01_scalar_types::ch_03_02_01_05_boolean_type::ch_03_02_01_05_01::fn_03_02_01_05_01();
+    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_01_scalar_types::ch_03_02_01_06_character_type::ch_03_02_01_06_01::fn_03_02_01_06_01();
 }
