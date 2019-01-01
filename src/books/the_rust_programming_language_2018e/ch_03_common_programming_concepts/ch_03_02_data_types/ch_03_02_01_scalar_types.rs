@@ -1,1 +1,1 @@
-pub mod ch_03_02_01_03_floating_point_types;
+pub mod ch_03_02_01_04_numeric_operations;
