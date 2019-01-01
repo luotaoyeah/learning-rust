@@ -9,5 +9,5 @@ fn type_of<T>(_: &T) {
 }
 
 fn main() {
-    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_02_compound_types::ch_03_02_02_01_tuple_type::ch_03_02_02_01_02::fn_03_02_02_01_02();
+    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_02_compound_types::ch_03_02_02_01_tuple_type::ch_03_02_02_01_03::fn_03_02_02_01_03();
 }
