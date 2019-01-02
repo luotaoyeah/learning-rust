@@ -14,8 +14,8 @@ fn main() {
     beginning_rust
         ::ch_01_printing_on_the_terminal
         ::ch_01_03_printing_combinations_of_literal_string
-        ::ch_01_03_01
-        ::fn_01_03_01();
+        ::ch_01_03_02
+        ::fn_01_03_02();
 
     /*
         the_rust_programming_language
