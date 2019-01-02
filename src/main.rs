@@ -14,8 +14,8 @@ fn main() {
     beginning_rust
         ::ch_01_printing_on_the_terminal
         ::ch_01_04_printing_several_lines_of_text
-        ::ch_01_04_01
-        ::fn_01_04_01();
+        ::ch_01_04_02
+        ::fn_01_04_02();
 
     /*
         the_rust_programming_language
