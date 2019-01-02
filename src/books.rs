@@ -1,1 +1,2 @@
-pub mod the_rust_programming_language_2018e;
+pub mod beginning_rust;
+pub mod the_rust_programming_language;

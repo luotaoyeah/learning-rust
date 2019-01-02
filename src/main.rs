@@ -1,5 +1,7 @@
 #![feature(core_intrinsics)]
-use crate::books::the_rust_programming_language_2018e::ch_03_common_programming_concepts;
+
+use crate::books::beginning_rust;
+use crate::books::the_rust_programming_language;
 
 mod books;
 
@@ -9,5 +11,19 @@ fn type_of<T>(_: &T) {
 }
 
 fn main() {
-    ch_03_common_programming_concepts::ch_03_02_data_types::ch_03_02_02_compound_types::ch_03_02_02_02_array_type::ch_03_02_02_02_04::fn_03_02_02_02_04();
+    beginning_rust
+        ::ch_01_printing_on_the_terminal
+        ::ch_01_03_printing_combinations_of_literal_string
+        ::ch_01_01_01
+        ::fn_01_01_01();
+
+    /*
+        the_rust_programming_language
+            ::ch_03_common_programming_concepts
+            ::ch_03_02_data_types
+            ::ch_03_02_02_compound_types
+            ::ch_03_02_02_02_array_type
+            ::ch_03_02_02_02_04
+            ::fn_03_02_02_02_04()
+    */
 }
