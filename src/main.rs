@@ -13,9 +13,9 @@ fn type_of<T>(_: &T) {
 fn main() {
     beginning_rust
         ::ch_01_printing_on_the_terminal
-        ::ch_01_03_printing_combinations_of_literal_string
-        ::ch_01_03_02
-        ::fn_01_03_02();
+        ::ch_01_04_printing_several_lines_of_text
+        ::ch_01_04_01
+        ::fn_01_04_01();
 
     /*
         the_rust_programming_language

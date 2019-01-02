@@ -1,1 +1,2 @@
 pub mod ch_01_03_printing_combinations_of_literal_string;
+pub mod ch_01_04_printing_several_lines_of_text;
