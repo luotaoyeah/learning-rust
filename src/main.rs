@@ -22,7 +22,7 @@ fn main() {
     the_rust_programming_language
             ::ch_03_common_programming_concepts
             ::ch_03_03_functions
-            ::ch_03_03_02_functions_parameters
-            ::ch_03_03_02_02
-            ::fn_03_03_02_02()
+            ::ch_03_03_03_function_bodies_contain_statements_and_expressions
+            ::ch_03_03_03_01
+            ::fn_03_03_03_01()
 }
