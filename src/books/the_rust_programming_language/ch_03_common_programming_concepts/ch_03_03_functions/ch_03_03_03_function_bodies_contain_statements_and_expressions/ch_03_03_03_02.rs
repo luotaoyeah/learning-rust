@@ -4,7 +4,7 @@
           statement has no return value
 */
 
-pub fn fn_03_03_03_01() {
+pub fn fn_03_03_03_02() {
     println!("-------------------------------------------------- 01");
     // statement 没有返回值，因此不能赋值给其他变量
     // 下面的 let y = 9 是一个 statement，没有返回值，因此不能再赋值给 x
