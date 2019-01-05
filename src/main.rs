@@ -23,6 +23,6 @@ fn main() {
             ::ch_03_common_programming_concepts
             ::ch_03_03_functions
             ::ch_03_03_03_function_bodies_contain_statements_and_expressions
-            ::ch_03_03_03_01
+            ::ch_03_03_03_02
             ::fn_03_03_03_01()
 }
