@@ -23,6 +23,6 @@ fn main() {
             ::ch_03_common_programming_concepts
             ::ch_03_03_functions
             ::ch_03_03_04_functions_with_return_values
-            ::ch_03_03_04_02
-            ::fn_03_03_04_02()
+            ::ch_03_03_04_03
+            ::fn_03_03_04_03()
 }
