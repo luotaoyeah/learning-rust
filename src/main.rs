@@ -11,18 +11,18 @@ fn type_of<T>(_: &T) {
 }
 
 fn main() {
-    /*
         beginning_rust
-            ::ch_01_printing_on_the_terminal
-            ::ch_01_07_comments
-            ::ch_01_07_01
-            ::fn_01_07_01();
-    */
+            ::ch_02_doing_arithmetic
+            ::ch_02_01_adding_integer_numbers
+            ::ch_02_01_01
+            ::fn_02_01_01();
 
+/*
     the_rust_programming_language
             ::ch_03_common_programming_concepts
             ::ch_03_05_control_flow
-            ::ch_03_05_01_if
-            ::ch_03_05_01_05
-            ::fn_03_05_01_05()
+            ::ch_03_05_02_repetition_with_loops
+            ::ch_03_05_02_01
+            ::fn_03_05_02_01()
+*/
 }
