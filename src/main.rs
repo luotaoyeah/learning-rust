@@ -21,8 +21,7 @@ fn main() {
 
     the_rust_programming_language
             ::ch_03_common_programming_concepts
-            ::ch_03_03_functions
-            ::ch_03_03_04_functions_with_return_values
-            ::ch_03_03_04_03
-            ::fn_03_03_04_03()
+            ::ch_03_04_comments
+            ::ch_03_04_01
+            ::fn_03_04_01()
 }
