@@ -23,6 +23,6 @@ fn main() {
             ::ch_03_common_programming_concepts
             ::ch_03_05_control_flow
             ::ch_03_05_01_if
-            ::ch_03_05_01_03
-            ::fn_03_05_01_03()
+            ::ch_03_05_01_04
+            ::fn_03_05_01_04()
 }
