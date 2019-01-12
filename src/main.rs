@@ -13,9 +13,9 @@ fn type_of<T>(_: &T) {
 fn main() {
         beginning_rust
             ::ch_02_doing_arithmetic
-            ::ch_02_02_other_operations_between_integer_numbers
-            ::ch_02_02_01
-            ::fn_02_02_01();
+            ::ch_02_03_floating_point_arithmetic
+            ::ch_02_03_01
+            ::fn_02_03_01();
 
 /*
     the_rust_programming_language
