@@ -17,4 +17,8 @@ pub fn fn_03_05_01_02() {
             println!("{}", "ERR");
         }
     */
+
+    if n != 0 {
+        println!("{}", "ERR");
+    }
 }
