@@ -13,9 +13,9 @@ fn type_of<T>(_: &T) {
 fn main() {
         beginning_rust
             ::ch_02_doing_arithmetic
-            ::ch_02_04_sequences_of_statements
-            ::ch_02_04_01
-            ::fn_02_04_01();
+            ::ch_02_05_breaking_literal_strings
+            ::ch_02_05_01
+            ::fn_02_05_01();
 
 /*
     the_rust_programming_language
