@@ -14,8 +14,8 @@ fn main() {
         beginning_rust
             ::ch_02_doing_arithmetic
             ::ch_02_03_floating_point_arithmetic
-            ::ch_02_03_01
-            ::fn_02_03_01();
+            ::ch_02_03_02
+            ::fn_02_03_02();
 
 /*
     the_rust_programming_language
