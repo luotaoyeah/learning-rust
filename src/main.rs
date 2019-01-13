@@ -14,8 +14,8 @@ fn main() {
         beginning_rust
             ::ch_02_doing_arithmetic
             ::ch_02_05_breaking_literal_strings
-            ::ch_02_05_02
-            ::fn_02_05_02();
+            ::ch_02_05_03
+            ::fn_02_05_03();
 
 /*
     the_rust_programming_language
