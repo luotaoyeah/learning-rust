@@ -22,7 +22,7 @@ fn main() {
     the_rust_programming_language
             ::ch_03_common_programming_concepts
             ::ch_03_05_control_flow
-            ::ch_03_05_03_returning_from_loops
-            ::ch_03_05_03_01
-            ::fn_03_05_03_01()
+            ::ch_03_05_04_conditional_loops_with_while
+            ::ch_03_05_04_01
+            ::fn_03_05_04_01()
 }
