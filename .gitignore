@@ -4,5 +4,5 @@
 
 /target
 /src/books/the_rust_programming_language/ch_07/communicator/target
-src/books/the_rust_programming_language/ch_11/ch_11_03/ch_11_03_02/ch_11_03_02_01/target
+/src/books/the_rust_programming_language/ch_11/ch_11_03/ch_11_03_02/ch_11_03_02_01/target
 **/*.rs.bk
