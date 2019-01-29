@@ -13,9 +13,9 @@ fn type_of<T>(_: &T) {
 fn main() {
     beginning_rust
         ::ch_03_naming_objects
-        ::ch_03_04_uninitialized_variables
-        ::ch_03_04_03
-        ::fn_03_04_03();
+        ::ch_03_05_the_leading_underscore
+        ::ch_03_05_01
+        ::fn_03_05_01();
 
     /*
         the_rust_programming_language
