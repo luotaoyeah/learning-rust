@@ -14,8 +14,8 @@ fn main() {
     beginning_rust
         ::ch_03_naming_objects
         ::ch_03_05_the_leading_underscore
-        ::ch_03_05_01
-        ::fn_03_05_01();
+        ::ch_03_05_02
+        ::fn_03_05_02();
 
     /*
         the_rust_programming_language
