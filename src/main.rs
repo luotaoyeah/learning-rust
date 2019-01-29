@@ -14,8 +14,8 @@ fn main() {
     beginning_rust
         ::ch_03_naming_objects
         ::ch_03_04_uninitialized_variables
-        ::ch_03_04_02
-        ::fn_03_04_02();
+        ::ch_03_04_03
+        ::fn_03_04_03();
 
     /*
         the_rust_programming_language
