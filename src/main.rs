@@ -13,9 +13,9 @@ fn type_of<T>(_: &T) {
 fn main() {
     beginning_rust
         ::ch_03_naming_objects
-        ::ch_03_02_mutable_variables
-        ::ch_03_02_01
-        ::fn_03_02_01();
+        ::ch_03_03_not_mutated_mutable_variables
+        ::ch_03_03_01
+        ::fn_03_03_01();
 
     /*
         the_rust_programming_language
