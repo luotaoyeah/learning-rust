@@ -14,8 +14,8 @@ fn main() {
     beginning_rust
         ::ch_03_naming_objects
         ::ch_03_06_boolean_values
-        ::ch_03_06_01
-        ::fn_03_06_01();
+        ::ch_03_06_02
+        ::fn_03_06_02();
 
     /*
         the_rust_programming_language
