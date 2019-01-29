@@ -1,1 +1,2 @@
 pub mod ch_03_01_associating_names_to_values;
+pub mod ch_03_02_mutable_variables;
