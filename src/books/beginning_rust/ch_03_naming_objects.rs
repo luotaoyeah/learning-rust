@@ -5,3 +5,4 @@ pub mod ch_03_04_uninitialized_variables;
 pub mod ch_03_05_the_leading_underscore;
 pub mod ch_03_06_boolean_values;
 pub mod ch_03_07_boolean_expression;
+pub mod ch_03_08_type_consistency_in_assignments;

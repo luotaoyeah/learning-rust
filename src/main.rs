@@ -13,9 +13,9 @@ fn type_of<T>(_: &T) {
 fn main() {
     beginning_rust
         ::ch_03_naming_objects
-        ::ch_03_07_boolean_expression
-        ::ch_03_07_01
-        ::fn_03_07_01();
+        ::ch_03_08_type_consistency_in_assignments
+        ::ch_03_08_01
+        ::fn_03_08_01();
 
     /*
         the_rust_programming_language
