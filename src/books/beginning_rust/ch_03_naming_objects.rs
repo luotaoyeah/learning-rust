@@ -8,3 +8,4 @@ pub mod ch_03_07_boolean_expression;
 pub mod ch_03_08_type_consistency_in_assignments;
 pub mod ch_03_09_change_of_type_and_of_mutability;
 pub mod ch_03_10_assignment_arithmetic_operators;
+pub mod ch_03_11_using_the_functions_of_the_standard_library;
