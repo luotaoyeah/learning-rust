@@ -14,8 +14,8 @@ fn main() {
     beginning_rust
         ::ch_03_naming_objects
         ::ch_03_11_using_the_functions_of_the_standard_library
-        ::ch_03_11_01
-        ::fn_03_11_01();
+        ::ch_03_11_02
+        ::fn_03_11_02();
 
     /*
         the_rust_programming_language
