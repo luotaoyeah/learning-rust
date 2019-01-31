@@ -13,9 +13,9 @@ fn print_type_of<T>(_: &T) {
 fn main() {
     beginning_rust
         ::ch_03_naming_objects
-        ::ch_03_09_change_of_type_and_of_mutability
-        ::ch_03_09_01
-        ::fn_03_09_01();
+        ::ch_03_10_assignment_arithmetic_operators
+        ::ch_03_10_01
+        ::fn_03_10_01();
 
     /*
         the_rust_programming_language
