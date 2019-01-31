@@ -22,6 +22,6 @@ fn main() {
     the_rust_programming_language
             ::ch_04_understanding_ownership
             ::ch_04_01_what_is_ownership
-            ::ch_04_01_01
-            ::fn_04_01_01();
+            ::ch_04_01_02
+            ::fn_04_01_02();
 }

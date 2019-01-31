@@ -9,7 +9,7 @@ pub fn fn_03_08_01() {
 
     let mut n: u32 = 9;
     /*
-        n = -9; // error[E0600]: cannot apply unary operator `-` to type `u32`
+        n = -9; // [E0600]: cannot apply unary operator `-` to type `u32`
     */
     println!("{}", n);
 }

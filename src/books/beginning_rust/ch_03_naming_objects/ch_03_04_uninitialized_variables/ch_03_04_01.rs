@@ -17,6 +17,6 @@ pub fn fn_03_04_01() {
     // 如果一个变量没有进行初始化就被使用，则会编译报错
     let i03: u32;
     /*
-        println!("{}", i03); // error[E0381]: borrow of possibly uninitialized variable: `i03`
+        println!("{}", i03); // [E0381]: borrow of possibly uninitialized variable: `i03`
     */
 }

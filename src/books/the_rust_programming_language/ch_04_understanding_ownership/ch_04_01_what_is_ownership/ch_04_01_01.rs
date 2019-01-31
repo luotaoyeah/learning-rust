@@ -20,5 +20,12 @@
 //
 pub fn fn_04_01_01() {
     println!("-------------------------------------------------- 01");
-    {}
+    let arr01: [&str; 3] = ["a", "b", "c"];
+
+    for (i, v) in arr01.iter().enumerate() {
+        println!("{}", i);
+    }
+    /*
+        println!("{}", v); // [E0425]: cannot find value `v` in this scope
+    */
 }
