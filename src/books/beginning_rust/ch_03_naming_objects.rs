@@ -6,3 +6,4 @@ pub mod ch_03_05_the_leading_underscore;
 pub mod ch_03_06_boolean_values;
 pub mod ch_03_07_boolean_expression;
 pub mod ch_03_08_type_consistency_in_assignments;
+pub mod ch_03_09_change_of_type_and_of_mutability;
