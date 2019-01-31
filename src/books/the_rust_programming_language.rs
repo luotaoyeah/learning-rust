@@ -1,1 +1,2 @@
 pub mod ch_03_common_programming_concepts;
+pub mod ch_04_understanding_ownership;

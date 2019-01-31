@@ -11,18 +11,17 @@ fn print_type_of<T>(_: &T) {
 }
 
 fn main() {
+/*
     beginning_rust
         ::ch_03_naming_objects
         ::ch_03_11_using_the_functions_of_the_standard_library
         ::ch_03_11_02
         ::fn_03_11_02();
+*/
 
-    /*
-        the_rust_programming_language
-                ::ch_03_common_programming_concepts
-                ::ch_03_05_control_flow
-                ::ch_03_05_05_looping_through_a_collection_with_for
-                ::ch_03_05_05_04
-                ::fn_03_05_05_04()
-    */
+    the_rust_programming_language
+            ::ch_04_understanding_ownership
+            ::ch_04_01_what_is_ownership
+            ::ch_04_01_01
+            ::fn_04_01_01();
 }
