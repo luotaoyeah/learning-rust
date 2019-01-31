@@ -13,8 +13,8 @@ pub fn fn_03_02_01_03_01() {
 
     /* 默认的浮点数类型是 f64 */
     let f01 = 3.14;
-    crate::type_of(&f01); // f64
+    crate::print_type_of(&f01); // f64
 
     let f02: f32 = 3.14;
-    crate::type_of(&f02); // f32
+    crate::print_type_of(&f02); // f32
 }

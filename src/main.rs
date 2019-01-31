@@ -6,7 +6,7 @@ use crate::books::the_rust_programming_language;
 mod books;
 
 /// 获取值的类型
-fn type_of<T>(_: &T) {
+fn print_type_of<T>(_: &T) {
     println!("{}", unsafe { std::intrinsics::type_name::<T>() });
 }
 
@@ -14,8 +14,8 @@ fn main() {
     beginning_rust
         ::ch_03_naming_objects
         ::ch_03_08_type_consistency_in_assignments
-        ::ch_03_08_01
-        ::fn_03_08_01();
+        ::ch_03_08_02
+        ::fn_03_08_02();
 
     /*
         the_rust_programming_language
