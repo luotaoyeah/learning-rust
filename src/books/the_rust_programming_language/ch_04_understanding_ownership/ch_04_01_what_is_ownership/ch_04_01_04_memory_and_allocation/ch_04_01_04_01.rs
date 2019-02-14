@@ -1,7 +1,7 @@
-/*
-  Understanding Ownership
-      Memory and Allocation
-*/
+//
+// Understanding Ownership
+//     Memory and Allocation
+//
 
 pub fn fn_04_01_04_01() {
     println!("-------------------------------------------------- 01");
