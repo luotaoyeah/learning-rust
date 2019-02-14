@@ -1,4 +1,4 @@
-#![feature(core_intrinsics)]
+// #![feature(core_intrinsics)]
 
 use crate::books::beginning_rust;
 use crate::books::the_rust_programming_language;
@@ -6,8 +6,8 @@ use crate::books::the_rust_programming_language;
 mod books;
 
 /// 打印类型
-fn print_type_of<T>(_: &T) {
-    println!("{}", unsafe { std::intrinsics::type_name::<T>() });
+fn print_type<T>(_: &T) {
+//    println!("{}", unsafe { std::intrinsics::type_name::<T>() });
 }
 
 fn main() {
@@ -22,6 +22,7 @@ fn main() {
     the_rust_programming_language
             ::ch_04_understanding_ownership
             ::ch_04_01_what_is_ownership
-            ::ch_04_01_03
-            ::fn_04_01_03();
+            ::ch_04_01_04_memory_and_allocation
+            ::ch_04_01_04_01
+            ::fn_04_01_04_01();
 }

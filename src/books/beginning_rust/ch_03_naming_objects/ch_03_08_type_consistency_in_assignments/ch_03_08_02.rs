@@ -16,5 +16,5 @@ pub fn fn_03_08_02() {
     // 下面的 n01 和 n02 都可以推断出类型
     let n01 = 9;
     let n02 = n01;
-    crate::print_type_of(&n02); // i32
+    crate::print_type(&n02); // i32
 }
