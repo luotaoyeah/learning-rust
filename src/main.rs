@@ -22,7 +22,6 @@ fn main() {
     the_rust_programming_language
             ::ch_04_understanding_ownership
             ::ch_04_01_what_is_ownership
-            ::ch_04_01_04_memory_and_allocation
-            ::ch_04_01_04_05
-            ::fn_04_01_04_05();
+            ::ch_04_01_05
+            ::fn_04_01_05();
 }
