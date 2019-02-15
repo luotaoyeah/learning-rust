@@ -23,6 +23,6 @@ fn main() {
             ::ch_04_understanding_ownership
             ::ch_04_01_what_is_ownership
             ::ch_04_01_04_memory_and_allocation
-            ::ch_04_01_04_04
-            ::fn_04_01_04_04();
+            ::ch_04_01_04_05
+            ::fn_04_01_04_05();
 }
